@@ -21,6 +21,15 @@
 		EA43E4D31625F81600C76AF8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA43E4B41625F81600C76AF8 /* Foundation.framework */; };
 		EA43E4DB1625F81600C76AF8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA43E4D91625F81600C76AF8 /* InfoPlist.strings */; };
 		EA43E4DE1625F81600C76AF8 /* DXTableKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA43E4DD1625F81600C76AF8 /* DXTableKitTests.m */; };
+		EA43E4E91625F83000C76AF8 /* DXSection.m in Sources */ = {isa = PBXBuildFile; fileRef = EA43E4E81625F82F00C76AF8 /* DXSection.m */; };
+		EA43E4EC1625F88500C76AF8 /* DXElement.m in Sources */ = {isa = PBXBuildFile; fileRef = EA43E4EB1625F88500C76AF8 /* DXElement.m */; };
+		EA43E4EF1625F89E00C76AF8 /* DXRootElement.m in Sources */ = {isa = PBXBuildFile; fileRef = EA43E4EE1625F89E00C76AF8 /* DXRootElement.m */; };
+		EA43E4F21625FC0A00C76AF8 /* DXController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA43E4F11625FC0A00C76AF8 /* DXController.m */; };
+		EA43E4F51625FC4000C76AF8 /* DXTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA43E4F41625FC4000C76AF8 /* DXTableView.m */; };
+		EA43E4F81625FC5B00C76AF8 /* DXTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA43E4F71625FC5B00C76AF8 /* DXTableCell.m */; };
+		EA43E5021626003D00C76AF8 /* DXDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = EA43E5001626003C00C76AF8 /* DXDataSource.m */; };
+		EA43E5031626003D00C76AF8 /* DXDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA43E5011626003D00C76AF8 /* DXDelegate.m */; };
+		EA43E508162604BF00C76AF8 /* DXLabelElement.m in Sources */ = {isa = PBXBuildFile; fileRef = EA43E507162604BF00C76AF8 /* DXLabelElement.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +62,24 @@
 		EA43E4DA1625F81600C76AF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EA43E4DC1625F81600C76AF8 /* DXTableKitTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXTableKitTests.h; sourceTree = "<group>"; };
 		EA43E4DD1625F81600C76AF8 /* DXTableKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXTableKitTests.m; sourceTree = "<group>"; };
+		EA43E4E71625F82F00C76AF8 /* DXSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXSection.h; sourceTree = "<group>"; };
+		EA43E4E81625F82F00C76AF8 /* DXSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXSection.m; sourceTree = "<group>"; };
+		EA43E4EA1625F88500C76AF8 /* DXElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXElement.h; sourceTree = "<group>"; };
+		EA43E4EB1625F88500C76AF8 /* DXElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXElement.m; sourceTree = "<group>"; };
+		EA43E4ED1625F89E00C76AF8 /* DXRootElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXRootElement.h; sourceTree = "<group>"; };
+		EA43E4EE1625F89E00C76AF8 /* DXRootElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXRootElement.m; sourceTree = "<group>"; };
+		EA43E4F01625FC0A00C76AF8 /* DXController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXController.h; sourceTree = "<group>"; };
+		EA43E4F11625FC0A00C76AF8 /* DXController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXController.m; sourceTree = "<group>"; };
+		EA43E4F31625FC4000C76AF8 /* DXTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXTableView.h; sourceTree = "<group>"; };
+		EA43E4F41625FC4000C76AF8 /* DXTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXTableView.m; sourceTree = "<group>"; };
+		EA43E4F61625FC5B00C76AF8 /* DXTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXTableCell.h; sourceTree = "<group>"; };
+		EA43E4F71625FC5B00C76AF8 /* DXTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXTableCell.m; sourceTree = "<group>"; };
+		EA43E4FB1626001100C76AF8 /* DXDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXDelegate.h; sourceTree = "<group>"; };
+		EA43E4FF1626003C00C76AF8 /* DXDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXDataSource.h; sourceTree = "<group>"; };
+		EA43E5001626003C00C76AF8 /* DXDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXDataSource.m; sourceTree = "<group>"; };
+		EA43E5011626003D00C76AF8 /* DXDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXDelegate.m; sourceTree = "<group>"; };
+		EA43E506162604BF00C76AF8 /* DXLabelElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXLabelElement.h; sourceTree = "<group>"; };
+		EA43E507162604BF00C76AF8 /* DXLabelElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXLabelElement.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,8 +139,12 @@
 		EA43E4B81625F81600C76AF8 /* DXTableKit */ = {
 			isa = PBXGroup;
 			children = (
+				EA43E5041626046300C76AF8 /* Controller */,
+				EA43E5051626048000C76AF8 /* Elements */,
 				EA43E4C11625F81600C76AF8 /* DXAppDelegate.h */,
 				EA43E4C21625F81600C76AF8 /* DXAppDelegate.m */,
+				EA43E4E71625F82F00C76AF8 /* DXSection.h */,
+				EA43E4E81625F82F00C76AF8 /* DXSection.m */,
 				EA43E4B91625F81600C76AF8 /* Supporting Files */,
 			);
 			path = DXTableKit;
@@ -150,6 +181,36 @@
 				EA43E4D91625F81600C76AF8 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EA43E5041626046300C76AF8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EA43E4F01625FC0A00C76AF8 /* DXController.h */,
+				EA43E4F11625FC0A00C76AF8 /* DXController.m */,
+				EA43E4F31625FC4000C76AF8 /* DXTableView.h */,
+				EA43E4F41625FC4000C76AF8 /* DXTableView.m */,
+				EA43E4F61625FC5B00C76AF8 /* DXTableCell.h */,
+				EA43E4F71625FC5B00C76AF8 /* DXTableCell.m */,
+				EA43E4FF1626003C00C76AF8 /* DXDataSource.h */,
+				EA43E5001626003C00C76AF8 /* DXDataSource.m */,
+				EA43E4FB1626001100C76AF8 /* DXDelegate.h */,
+				EA43E5011626003D00C76AF8 /* DXDelegate.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		EA43E5051626048000C76AF8 /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				EA43E4EA1625F88500C76AF8 /* DXElement.h */,
+				EA43E4EB1625F88500C76AF8 /* DXElement.m */,
+				EA43E4ED1625F89E00C76AF8 /* DXRootElement.h */,
+				EA43E4EE1625F89E00C76AF8 /* DXRootElement.m */,
+				EA43E506162604BF00C76AF8 /* DXLabelElement.h */,
+				EA43E507162604BF00C76AF8 /* DXLabelElement.m */,
+			);
+			name = Elements;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +325,15 @@
 			files = (
 				EA43E4BF1625F81600C76AF8 /* main.m in Sources */,
 				EA43E4C31625F81600C76AF8 /* DXAppDelegate.m in Sources */,
+				EA43E4E91625F83000C76AF8 /* DXSection.m in Sources */,
+				EA43E4EC1625F88500C76AF8 /* DXElement.m in Sources */,
+				EA43E4EF1625F89E00C76AF8 /* DXRootElement.m in Sources */,
+				EA43E4F21625FC0A00C76AF8 /* DXController.m in Sources */,
+				EA43E4F51625FC4000C76AF8 /* DXTableView.m in Sources */,
+				EA43E4F81625FC5B00C76AF8 /* DXTableCell.m in Sources */,
+				EA43E5021626003D00C76AF8 /* DXDataSource.m in Sources */,
+				EA43E5031626003D00C76AF8 /* DXDelegate.m in Sources */,
+				EA43E508162604BF00C76AF8 /* DXLabelElement.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
