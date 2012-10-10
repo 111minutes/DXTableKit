@@ -22,6 +22,7 @@
     DXTableCell *cell = (DXTableCell *) [super getCellForTableView:tableView controller:controller];
     
     cell.textLabel.text = _title;
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
     return cell;
 }

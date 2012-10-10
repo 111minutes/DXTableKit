@@ -7,7 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "DXTableView.h"
 
-@interface DXDataSource : NSObject <UITableViewDataSource>
+@interface DXDataSource : NSObject <UITableViewDataSource> {
+@private
+__unsafe_unretained DXTableView *_tableView;
+}
+
+- (id <UITableViewDataSource, NSObject>)initForTableView:(DXTableView *)view;
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath;
 
 @end

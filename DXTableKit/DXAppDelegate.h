@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DXTableCell.h"
+#import "DXExampleViewController.h"
 
 @interface DXAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) DXExampleViewController *controller;
+@property (strong, nonatomic) DXTableView *tableView;
 
 @end

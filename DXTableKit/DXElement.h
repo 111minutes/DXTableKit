@@ -7,8 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "DXTableCell.h"
+
+@class DXTableView;
+@class DXController;
 
 @interface DXElement : NSObject
 
-//- (UITableViewCell *)getCellForTableView:(DXTableView *)tableView controller:(DXController *)controller;
+- (UITableViewCell *)getCellForTableView:(DXTableView *)tableView controller:(DXController *)controller;
+- (void)selected:(DXTableView *)tableView controller:(DXController *)controller indexPath:(NSIndexPath *)indexPath;
 @end

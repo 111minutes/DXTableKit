@@ -9,10 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "DXTableView.h"
 
-@class DXTableView;
-
 @interface DXController : UIViewController {
-    @private
     DXRootElement *_root;
     DXTableView *_tableView;
     id <UITableViewDataSource> _DXDataSource;
@@ -24,5 +21,6 @@
 
 - (DXController *)initWithRootElement:(DXRootElement *)rootElement;
 - (void)displayController:(UIViewController *)controller;
+- (void)displayViewControllerForRoot:(DXRootElement *)root;
 
 @end

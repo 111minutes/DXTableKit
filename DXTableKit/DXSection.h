@@ -19,6 +19,7 @@
 
 @property (nonatomic, strong) NSMutableArray *elements;
 @property (nonatomic, strong) DXRootElement *rootElement;
+@property (nonatomic, strong) NSString *title;
 
 - (DXSection *)initWithTitle:(NSString *)title;
 - (void)addElement:(DXElement *)element;

@@ -30,6 +30,7 @@
 		EA43E5021626003D00C76AF8 /* DXDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = EA43E5001626003C00C76AF8 /* DXDataSource.m */; };
 		EA43E5031626003D00C76AF8 /* DXDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA43E5011626003D00C76AF8 /* DXDelegate.m */; };
 		EA43E508162604BF00C76AF8 /* DXLabelElement.m in Sources */ = {isa = PBXBuildFile; fileRef = EA43E507162604BF00C76AF8 /* DXLabelElement.m */; };
+		EA43E51316260D1100C76AF8 /* DXExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA43E51216260D1100C76AF8 /* DXExampleViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,8 @@
 		EA43E5011626003D00C76AF8 /* DXDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXDelegate.m; sourceTree = "<group>"; };
 		EA43E506162604BF00C76AF8 /* DXLabelElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXLabelElement.h; sourceTree = "<group>"; };
 		EA43E507162604BF00C76AF8 /* DXLabelElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXLabelElement.m; sourceTree = "<group>"; };
+		EA43E51116260D1100C76AF8 /* DXExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXExampleViewController.h; sourceTree = "<group>"; };
+		EA43E51216260D1100C76AF8 /* DXExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXExampleViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +212,8 @@
 				EA43E4EE1625F89E00C76AF8 /* DXRootElement.m */,
 				EA43E506162604BF00C76AF8 /* DXLabelElement.h */,
 				EA43E507162604BF00C76AF8 /* DXLabelElement.m */,
+				EA43E51116260D1100C76AF8 /* DXExampleViewController.h */,
+				EA43E51216260D1100C76AF8 /* DXExampleViewController.m */,
 			);
 			name = Elements;
 			sourceTree = "<group>";
@@ -334,6 +339,7 @@
 				EA43E5021626003D00C76AF8 /* DXDataSource.m in Sources */,
 				EA43E5031626003D00C76AF8 /* DXDelegate.m in Sources */,
 				EA43E508162604BF00C76AF8 /* DXLabelElement.m in Sources */,
+				EA43E51316260D1100C76AF8 /* DXExampleViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,6 +506,7 @@
 				EA43E4E31625F81600C76AF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA43E4E41625F81600C76AF8 /* Build configuration list for PBXNativeTarget "DXTableKitTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +515,7 @@
 				EA43E4E61625F81600C76AF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

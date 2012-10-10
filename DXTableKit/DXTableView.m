@@ -9,6 +9,9 @@
 #import "DXTableView.h"
 
 @implementation DXTableView
+{
+    BOOL _deselectRowWhenViewAppears;
+}
 
 - (DXTableView *)initWithController:(DXController *)controller {
         self = [super initWithFrame:CGRectMake(0, 0, 0, 0) style:controller.root.grouped ? UITableViewStyleGrouped : UITableViewStylePlain];
@@ -17,11 +20,14 @@
         _controller = controller;
         _root = controller.root;
         
-        _DXDataSource = [[DXDataSource alloc] init];
+        _DXDataSource = [[DXDataSource alloc] initForTableView:self];
         self.dataSource = _DXDataSource;
         
-        _DXDelegate = [[DXDelegate alloc] init];
+        _DXDelegate = [[DXDelegate alloc] initForTableView:self];
         self.delegate = _DXDelegate;
+        
+        self.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+        self.backgroundColor = [UIColor scrollViewTexturedBackgroundColor];
         
     }
     return self;

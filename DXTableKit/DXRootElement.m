@@ -23,6 +23,8 @@
 - (void)addSection:(DXSection *)section {
     if (_sections == nil)
         _sections = [[NSMutableArray alloc] init];
+    
+    [_sections addObject:section];
 }
 
 - (DXSection *)getSectionForIndex:(NSInteger)index {
@@ -35,10 +37,22 @@
 
 - (UITableViewCell *)getCellForTableView:(DXTableView *)tableView controller:(DXController *)controller {
     UITableViewCell *cell = [super getCellForTableView:tableView controller:controller];
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    cell.selectionStyle = UITableViewCellSelectionStyleBlue;
+    
     if (_title!= nil)
         cell.textLabel.text = _title;
 
     return cell;
+}
+
+- (void)selected:(DXTableView *)tableView controller:(DXController *)controller indexPath:(NSIndexPath *)path {
+    [super selected:tableView controller:controller indexPath:path];
+    
+    if (self.sections==nil)
+        return;
+    
+    [controller displayViewControllerForRoot:self];
 }
 
 @end

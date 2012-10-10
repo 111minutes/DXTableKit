@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "DXTableView.h"
 
-@interface DXDelegate : NSObject <UITableViewDelegate>
-
+@interface DXDelegate : NSObject <UITableViewDelegate> {
+    @private
+        __unsafe_unretained DXTableView *_tableView;
+}
+- (id<UITableViewDelegate, UIScrollViewDelegate>)initForTableView:(DXTableView *)tableView;
 @end

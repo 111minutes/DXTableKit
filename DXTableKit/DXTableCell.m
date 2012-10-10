@@ -11,14 +11,10 @@
 @implementation DXTableCell
 
 - (DXTableCell *)initWithReuseIdentifier:(NSString *)identifier {
-    self = [super initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:identifier];
+    self = [super initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     
     return self;
 }
 
-- (void)layoutSubviews {
-    self.textLabel.backgroundColor = [UIColor clearColor];
-    self.detailTextLabel.backgroundColor = [UIColor clearColor];
-}
 
 @end

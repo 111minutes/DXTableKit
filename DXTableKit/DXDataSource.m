@@ -10,23 +10,33 @@
 
 @implementation DXDataSource
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    return 0;
+- (id <UITableViewDataSource>)initForTableView:(DXTableView *)tableView {
+    self = [super init];
+    if (self) {
+        _tableView = tableView;
+    }
+    return self;
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return [_tableView.root numberOfSections];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 0;
+    return [_tableView.root getSectionForIndex:section].elements.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    
-    
+    DXSection *section = [_tableView.root getSectionForIndex:indexPath.section];
+    DXElement *element = [section.elements objectAtIndex:(NSUInteger) indexPath.row];
+    UITableViewCell *cell = [element getCellForTableView:(DXTableView *) tableView controller:_tableView.controller];
     return cell;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    return [_tableView.root getSectionForIndex:section].title;
 }
 
 
@@ -45,32 +55,11 @@
 }
 
 
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
+- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
 }
 
 - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return YES;
 }
-
-
-- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-    
-}
-- (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section {
-    
-}
-
-
-- (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView; {
-    
-}
-
-- (NSInteger)tableView:(UITableView *)tableView sectionForSectionIndexTitle:(NSString *)title atIndex:(NSInteger)index {
-    
-}
-
-
-
 @end

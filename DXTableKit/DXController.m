@@ -8,10 +8,6 @@
 
 #import "DXController.h"
 
-@interface DXController ()
-
-@end
-
 @implementation DXController
 
 - (DXController *)initWithRootElement:(DXRootElement *)rootElement {
@@ -37,18 +33,30 @@
 }
 
 - (void)displayController:(UIViewController *)controller {
-    if (self.navigationController != nil) {
+    if (self.navigationController != nil)
         [self.navigationController pushViewController:controller animated:YES];
-    } else {
-        [self presentModalViewController:controller animated:YES];
-    }
 }
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	_tableView = [[DXTableView alloc] initWithController:self];
+- (void)loadView {
+    [super loadView];
+	self.tableView = [[DXTableView alloc] initWithController:self];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    if (_root != nil)
+        self.title = _root.title;
+}
+
+- (void)setTableView:(DXTableView *)tableView {
+    _tableView = tableView;
+    
+    self.view = _tableView;
+}
+
+- (void)displayViewControllerForRoot:(DXRootElement *)root {
+    DXController *controller = [[DXController alloc] initWithRootElement: root];
+    [self displayController:controller];
+}
 
 @end

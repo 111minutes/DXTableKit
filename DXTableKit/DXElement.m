@@ -14,7 +14,7 @@
 - (UITableViewCell *)getCellForTableView:(DXTableView *)tableView controller:(DXController *)controller {
     DXTableCell *cell = [tableView dequeueReusableCellWithIdentifier:@"DXElementCell"];
     if (cell == nil){
-        cell = [[DXTableCell alloc] initWithReuseIdentifier:@"DXElementCell%"];
+        cell = [[DXTableCell alloc] initWithReuseIdentifier:@"DXElementCell"];
     }
     
     cell.textLabel.text = nil;
@@ -25,6 +25,10 @@
     cell.showsReorderControl = YES;
     cell.accessoryView = nil;
     return cell;
+}
+
+- (void)selected:(DXTableView *)tableView controller:(DXController *)controller indexPath:(NSIndexPath *)indexPath {
+    [[tableView cellForRowAtIndexPath:indexPath] becomeFirstResponder];
 }
 
 @end
