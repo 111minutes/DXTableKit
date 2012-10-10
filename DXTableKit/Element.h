@@ -6,8 +6,10 @@
 //  Copyright (c) 2012 111. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "DXTableViewCell.h"
+
+@class DXTableView;
 
 @interface Element : NSObject
-
+- (UITableViewCell *)getCellForTableView:(DXTableView *)tableView;
 @end

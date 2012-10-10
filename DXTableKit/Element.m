@@ -11,10 +11,10 @@
 @implementation Element
 
 - (UITableViewCell *)getCellForTableView:(UITableView *)tableView {
-    UITableViewCell  *cell = [tableView dequeueReusableCellWithIdentifier:@"ElementCell"];
+    DXTableViewCell  *cell = [tableView dequeueReusableCellWithIdentifier:@"ElementCell"];
     
     if(cell == nil) {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"ElementCell"];
+        cell = [[DXTableViewCell alloc]initWithReuseIdentifier:@"ElementCell"];
     }
     
     return cell;

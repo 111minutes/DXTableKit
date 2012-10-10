@@ -35,4 +35,13 @@
     return [_sections count];
 }
 
+- (UITableViewCell *)getCellForTableView:(DXTableView *)tableView {
+    UITableViewCell *cell = [super getCellForTableView:tableView];
+    if (_title != nil)
+        cell.textLabel.text = _title;
+    
+    return cell;
+    
+}
+
 @end

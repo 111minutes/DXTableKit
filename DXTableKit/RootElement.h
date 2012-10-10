@@ -10,6 +10,7 @@
 #import "Section.h"
 
 @class Section;
+
 @interface RootElement : Element {
     NSString *_title;
     NSMutableArray *_sections;

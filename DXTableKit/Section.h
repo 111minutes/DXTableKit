@@ -7,11 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Element.h"
-#import "RootElement.h"
+#import "DXTableView.h"
 
 @class RootElement;
 @class Element;
+
 
 @interface Section : NSObject {
     NSString *_title;

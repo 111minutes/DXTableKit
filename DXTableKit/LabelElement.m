@@ -18,8 +18,8 @@
     return self;
 }
 
-- (UITableViewCell *)cellForTableView:(UITableView *)tableView {
-    UITableViewCell *cell;
+- (UITableViewCell *)cellForTableView:(DXTableView *)tableView {
+    DXTableViewCell *cell = (DXTableViewCell *) [super getCellForTableView:tableView];
     
     cell.textLabel.text = _title;
     

@@ -26,6 +26,8 @@
 		D9ACC68D1625BA8800ED8C70 /* DataSource.h in Resources */ = {isa = PBXBuildFile; fileRef = D9ACC68C1625BA8800ED8C70 /* DataSource.h */; };
 		D9ACC68F1625BA9500ED8C70 /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D9ACC68E1625BA9500ED8C70 /* DataSource.m */; };
 		D9ACC6921625BB0F00ED8C70 /* Delegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D9ACC6911625BB0F00ED8C70 /* Delegate.m */; };
+		EA43E4981625D39200C76AF8 /* DXTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA43E4971625D39100C76AF8 /* DXTableViewCell.m */; };
+		EA43E49C1625DA1700C76AF8 /* DXController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA43E49B1625DA1700C76AF8 /* DXController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,11 @@
 		D9ACC68E1625BA9500ED8C70 /* DataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSource.m; sourceTree = "<group>"; };
 		D9ACC6901625BB0800ED8C70 /* Delegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Delegate.h; sourceTree = "<group>"; };
 		D9ACC6911625BB0F00ED8C70 /* Delegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Delegate.m; sourceTree = "<group>"; };
+		EA43E4961625D39100C76AF8 /* DXTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXTableViewCell.h; sourceTree = "<group>"; };
+		EA43E4971625D39100C76AF8 /* DXTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXTableViewCell.m; sourceTree = "<group>"; };
+		EA43E49A1625DA1700C76AF8 /* DXController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXController.h; sourceTree = "<group>"; };
+		EA43E49B1625DA1700C76AF8 /* DXController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXController.m; sourceTree = "<group>"; };
+		EA43E49E1625DECE00C76AF8 /* DXTableKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXTableKit.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,10 +142,14 @@
 				D9ACC67E1625AB2700ED8C70 /* Section.m */,
 				D9ACC6891625B72600ED8C70 /* DXTableView.h */,
 				D9ACC68A1625B72700ED8C70 /* DXTableView.m */,
+				EA43E49A1625DA1700C76AF8 /* DXController.h */,
+				EA43E49B1625DA1700C76AF8 /* DXController.m */,
 				D9ACC6901625BB0800ED8C70 /* Delegate.h */,
 				D9ACC6911625BB0F00ED8C70 /* Delegate.m */,
 				D9ACC68C1625BA8800ED8C70 /* DataSource.h */,
 				D9ACC68E1625BA9500ED8C70 /* DataSource.m */,
+				EA43E4961625D39100C76AF8 /* DXTableViewCell.h */,
+				EA43E4971625D39100C76AF8 /* DXTableViewCell.m */,
 				D9ACC6551625AB1A00ED8C70 /* Supporting Files */,
 			);
 			path = DXTableKit;
@@ -183,6 +194,7 @@
 				D9ACC6841625AB6A00ED8C70 /* RootElement.m */,
 				D9ACC6861625AFD400ED8C70 /* LabelElement.h */,
 				D9ACC6871625AFD400ED8C70 /* LabelElement.m */,
+				EA43E49E1625DECE00C76AF8 /* DXTableKit.h */,
 			);
 			name = Elements;
 			sourceTree = "<group>";
@@ -303,6 +315,8 @@
 				D9ACC68B1625B72700ED8C70 /* DXTableView.m in Sources */,
 				D9ACC68F1625BA9500ED8C70 /* DataSource.m in Sources */,
 				D9ACC6921625BB0F00ED8C70 /* Delegate.m in Sources */,
+				EA43E4981625D39200C76AF8 /* DXTableViewCell.m in Sources */,
+				EA43E49C1625DA1700C76AF8 /* DXController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +482,7 @@
 				D9ACC6791625AB1A00ED8C70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D9ACC67A1625AB1A00ED8C70 /* Build configuration list for PBXNativeTarget "DXTableKitTests" */ = {
 			isa = XCConfigurationList;
@@ -476,6 +491,7 @@
 				D9ACC67C1625AB1A00ED8C70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
