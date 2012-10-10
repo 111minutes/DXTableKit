@@ -6,6 +6,7 @@
 //  Copyright (c) 2012 111. All rights reserved.
 //
 
+#import "DXTableView.h"
 #import "DXTableViewCell.h"
 
 @class DXTableView;

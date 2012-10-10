@@ -6,10 +6,12 @@
 //  Copyright (c) 2012 111. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
 #import "Element.h"
 #import "Section.h"
 
 @class Section;
+@class Element;
 
 @interface RootElement : Element {
     NSString *_title;

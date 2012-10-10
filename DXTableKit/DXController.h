@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Section.h"
 
-@class DXTableView;
+@class DXController;
 
 @interface DXController : UIViewController {
     

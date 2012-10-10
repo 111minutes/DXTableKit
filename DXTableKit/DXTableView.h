@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "Element.h"
-#import "Section.h"
+#import "RootElement.h"
 
-@class Element, RootElement;
+@class Element;
+@class RootElement;
 
 @interface DXTableView : UITableView {
     RootElement *_root;
