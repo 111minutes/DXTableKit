@@ -27,7 +27,6 @@
         self.delegate = _DXDelegate;
         
         self.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
-        self.backgroundColor = [UIColor scrollViewTexturedBackgroundColor];
         
     }
     return self;

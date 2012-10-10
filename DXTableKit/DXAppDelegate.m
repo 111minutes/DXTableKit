@@ -31,8 +31,7 @@
     root.grouped = YES;
     root.title = @"Testing!";
     
-    DXSection *sectionSamples = [[DXSection alloc] init];
-    [sectionSamples addElement:[self createLabelsRoot]];
+    DXSection *sectionSamples = [[DXSection alloc] initWithTitle:@"Sample Section"];
     [sectionSamples addElement:[self createLabelsRoot]];
     
     [root addSection:sectionSamples];

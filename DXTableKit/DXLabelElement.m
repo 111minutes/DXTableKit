@@ -21,8 +21,10 @@
 - (UITableViewCell *)getCellForTableView:(DXTableView *)tableView controller:(DXController *)controller {
     DXTableCell *cell = (DXTableCell *) [super getCellForTableView:tableView controller:controller];
     
+    cell.accessoryType = UITableViewCellAccessoryNone;
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.textLabel.text = _title;
-    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    
     
     return cell;
 }

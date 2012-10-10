@@ -23,6 +23,7 @@
     DXElement *element = [section.elements objectAtIndex:(NSUInteger) indexPath.row];
     
     [element selected:_tableView controller:_tableView.controller indexPath:indexPath];
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 @end
