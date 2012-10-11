@@ -7,6 +7,8 @@
 //
 
 #import "DXTableKitTests.h"
+#import "DXController.h"
+#import "Kiwi.h"
 
 @implementation DXTableKitTests
 
@@ -24,9 +26,15 @@
     [super tearDown];
 }
 
-- (void)testExample
-{
-    STFail(@"Unit tests are not implemented yet in DXTableKitTests");
+- (void)test {
+    id mockedClass = [DXController mock];
+    id mock = [KWMock nullMockWithName:@"Controller" forClass:mockedClass];
+    
+    STAssertNotNil(mock, @"expected a mock object to be initialized");
+    STAssertEqualObjects([mock mockedClass], mockedClass, @"expected the mockedClass property to be set");
+    STAssertTrue([mock isNullMock], @"expected the isNullObject property to be set");
+
+    
 }
 
 @end
