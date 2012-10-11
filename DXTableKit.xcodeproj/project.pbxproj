@@ -20,7 +20,6 @@
 		EA43E4D21625F81600C76AF8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA43E4B21625F81600C76AF8 /* UIKit.framework */; };
 		EA43E4D31625F81600C76AF8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA43E4B41625F81600C76AF8 /* Foundation.framework */; };
 		EA43E4DB1625F81600C76AF8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA43E4D91625F81600C76AF8 /* InfoPlist.strings */; };
-		EA43E4DE1625F81600C76AF8 /* DXTableKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA43E4DD1625F81600C76AF8 /* DXTableKitTests.m */; };
 		EA43E4E91625F83000C76AF8 /* DXSection.m in Sources */ = {isa = PBXBuildFile; fileRef = EA43E4E81625F82F00C76AF8 /* DXSection.m */; };
 		EA43E4EC1625F88500C76AF8 /* DXElement.m in Sources */ = {isa = PBXBuildFile; fileRef = EA43E4EB1625F88500C76AF8 /* DXElement.m */; };
 		EA43E4EF1625F89E00C76AF8 /* DXRootElement.m in Sources */ = {isa = PBXBuildFile; fileRef = EA43E4EE1625F89E00C76AF8 /* DXRootElement.m */; };
@@ -32,6 +31,11 @@
 		EA43E508162604BF00C76AF8 /* DXLabelElement.m in Sources */ = {isa = PBXBuildFile; fileRef = EA43E507162604BF00C76AF8 /* DXLabelElement.m */; };
 		EA43E51316260D1100C76AF8 /* DXExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA43E51216260D1100C76AF8 /* DXExampleViewController.m */; };
 		EAAF7BED1626BBA700D2AFE3 /* libKiwi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EAAF7BE91626BA1B00D2AFE3 /* libKiwi.a */; };
+		EAAF7C3C1627031E00D2AFE3 /* DXControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EAAF7C371627031E00D2AFE3 /* DXControllerTests.m */; };
+		EAAF7C3D1627031E00D2AFE3 /* DXElementsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = EAAF7C381627031E00D2AFE3 /* DXElementsTest.m */; };
+		EAAF7C3E1627031E00D2AFE3 /* DXElementsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EAAF7C391627031E00D2AFE3 /* DXElementsTests.m */; };
+		EAAF7C3F1627031E00D2AFE3 /* DXSectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EAAF7C3A1627031E00D2AFE3 /* DXSectionTests.m */; };
+		EAAF7C401627031E00D2AFE3 /* DXTableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EAAF7C3B1627031E00D2AFE3 /* DXTableViewTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,8 +66,6 @@
 		EA43E4D01625F81600C76AF8 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		EA43E4D81625F81600C76AF8 /* DXTableKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DXTableKitTests-Info.plist"; sourceTree = "<group>"; };
 		EA43E4DA1625F81600C76AF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		EA43E4DC1625F81600C76AF8 /* DXTableKitTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXTableKitTests.h; sourceTree = "<group>"; };
-		EA43E4DD1625F81600C76AF8 /* DXTableKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXTableKitTests.m; sourceTree = "<group>"; };
 		EA43E4E71625F82F00C76AF8 /* DXSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXSection.h; sourceTree = "<group>"; };
 		EA43E4E81625F82F00C76AF8 /* DXSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXSection.m; sourceTree = "<group>"; };
 		EA43E4EA1625F88500C76AF8 /* DXElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXElement.h; sourceTree = "<group>"; };
@@ -85,6 +87,11 @@
 		EA43E51116260D1100C76AF8 /* DXExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXExampleViewController.h; sourceTree = "<group>"; };
 		EA43E51216260D1100C76AF8 /* DXExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXExampleViewController.m; sourceTree = "<group>"; };
 		EAAF7BE91626BA1B00D2AFE3 /* libKiwi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libKiwi.a; path = DXTableKitTests/Kiwi/libKiwi.a; sourceTree = "<group>"; };
+		EAAF7C371627031E00D2AFE3 /* DXControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXControllerTests.m; sourceTree = "<group>"; };
+		EAAF7C381627031E00D2AFE3 /* DXElementsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXElementsTest.m; sourceTree = "<group>"; };
+		EAAF7C391627031E00D2AFE3 /* DXElementsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXElementsTests.m; sourceTree = "<group>"; };
+		EAAF7C3A1627031E00D2AFE3 /* DXSectionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXSectionTests.m; sourceTree = "<group>"; };
+		EAAF7C3B1627031E00D2AFE3 /* DXTableViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXTableViewTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,8 +181,11 @@
 		EA43E4D61625F81600C76AF8 /* DXTableKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				EA43E4DC1625F81600C76AF8 /* DXTableKitTests.h */,
-				EA43E4DD1625F81600C76AF8 /* DXTableKitTests.m */,
+				EAAF7C371627031E00D2AFE3 /* DXControllerTests.m */,
+				EAAF7C381627031E00D2AFE3 /* DXElementsTest.m */,
+				EAAF7C391627031E00D2AFE3 /* DXElementsTests.m */,
+				EAAF7C3A1627031E00D2AFE3 /* DXSectionTests.m */,
+				EAAF7C3B1627031E00D2AFE3 /* DXTableViewTests.m */,
 				EA43E4D71625F81600C76AF8 /* Supporting Files */,
 			);
 			path = DXTableKitTests;
@@ -351,7 +361,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA43E4DE1625F81600C76AF8 /* DXTableKitTests.m in Sources */,
+				EAAF7C3C1627031E00D2AFE3 /* DXControllerTests.m in Sources */,
+				EAAF7C3D1627031E00D2AFE3 /* DXElementsTest.m in Sources */,
+				EAAF7C3E1627031E00D2AFE3 /* DXElementsTests.m in Sources */,
+				EAAF7C3F1627031E00D2AFE3 /* DXSectionTests.m in Sources */,
+				EAAF7C401627031E00D2AFE3 /* DXTableViewTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
